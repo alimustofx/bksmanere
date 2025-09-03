@@ -5,7 +5,7 @@
             -moz-osx-font-smoothing: grayscale;
         }
         .hero-bg {
-            background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('/img/headerbk.png');
+            background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('./img/headerbk.png');
             background-size: cover;
             background-position: center;
         }
