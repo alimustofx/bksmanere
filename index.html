@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konseling & Bimbingan - SMA Negeri 1 Turen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-yellow': '#facc15', // yellow-400
+                        'brand-green': '#16a34a', // green-600
+                        'brand-dark': '#1f2937', // gray-800
+                    },
+                },
+            },
+        };
+    </script>
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-brand-dark flex items-center gap-2">
+                <img src="/img/logobk.png" alt="Logo BK" class="h-10 w-auto object-contain">
+                <span>BK SMA Negeri 1 Turen</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-brand-green font-medium transition duration-300">Home</a>
+                <a href="#news" class="text-gray-600 hover:text-brand-green font-medium transition duration-300">Berita</a>
+                <a href="#self-help" class="text-gray-600 hover:text-brand-green font-medium transition duration-300">Tolong Diri</a>
+                <a href="#announcements" class="text-gray-600 hover:text-brand-green font-medium transition duration-300">Pengumuman</a>
+                <a href="#gallery" class="text-gray-600 hover:text-brand-green font-medium transition duration-300">Galeri</a>
+                <a href="#contact" class="bg-brand-yellow text-brand-dark font-bold py-2 px-5 rounded-full hover:bg-yellow-300 transition duration-300 shadow-md hover:shadow-lg">Hubungi Kami</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-brand-green focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 border-t border-gray-200">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-brand-green font-medium">Home</a>
+            <a href="#news" class="block py-2 text-gray-600 hover:text-brand-green font-medium">Berita</a>
+            <a href="#self-help" class="block py-2 text-gray-600 hover:text-brand-green font-medium">Tolong Diri</a>
+            <a href="#announcements" class="block py-2 text-gray-600 hover:text-brand-green font-medium">Pengumuman</a>
+            <a href="#gallery" class="block py-2 text-gray-600 hover:text-brand-green font-medium">Galeri</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-brand-green font-medium">Kontak</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg text-white">
+            <div class="container mx-auto px-6 py-32 md:py-48 text-center flex flex-col items-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate__animated animate__fadeInDown leading-tight">Layanan Bimbingan & Konseling</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate__animated animate__fadeInUp animate__delay-1s text-gray-200">Membantu siswa SMA Negeri 1 Turen mencapai potensi penuh dalam aspek akademik, karir, dan pengembangan diri.</p>
+                <a href="#contact" class="bg-brand-yellow text-brand-dark font-bold py-3 px-8 rounded-full transition duration-300 animate__animated animate__pulse animate__delay-2s animate__infinite shadow-lg hover:bg-yellow-300 text-lg flex items-center gap-2">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Jadwalkan Konsultasi</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="section-title animate-on-scroll" data-animation="animate__fadeIn">
+                    <h2>Artikel Terbaru</h2>
+                    <p>Ikuti informasi, wawasan, dan tips terbaru dari tim Bimbingan Konseling SMA Negeri 1 Turen.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- News Card 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 animate-on-scroll" data-animation="animate__fadeInUp">
+                        <img src="/img/news1.png" alt="Seminar Karir" class="w-full h-52 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">Sukses Masuk Perguruan Tinggi 2026</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-3">Tips dan trik jitu untuk mempersiapkan diri menghadapi seleksi masuk perguruan tinggi favorit.</p>
+                            <a href="#" class="read-more-btn text-brand-green font-semibold hover:underline group" data-title="Sukses Masuk Perguruan Tinggi 2026" data-img="img/news1.png" data-content="<p>Dengan bimbingan, kita bisa membahas berbagai strategi jitu, mulai dari pemilihan jurusan yang tepat, persiapan materi UTBK, hingga tips wawancara.</p><p>Berikan waktu untuk dirimu dalam mempersiapkan masa depanmu! Silahkan datang ke ruang bimbingan konseling <strong>kapanpun</strong> waktunya dengan melakukan penjadwalan terlebih dahulu.</p>">Baca Selengkapnya <span class="group-hover:ml-1 transition-all">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <!-- News Card 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.2s;">
+                        <img src="/img/news2.png" alt="Workshop Kesehatan Mental" class="w-full h-52 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">Manajemen Stres Jelang Ujian</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-3">Belajar teknik relaksasi dan manajemen waktu untuk menghadapi ujian dengan lebih tenang dan percaya diri.</p>
+                             <a href="#" class="read-more-btn text-brand-green font-semibold hover:underline group" data-title="Manajemen Stres Jelang Ujian" data-img="img/news2.png" data-content="<p>Ujian seringkali menjadi sumber stres bagi siswa. Dengan bimbingan, kita akan belajar berbagai teknik relaksasi sederhana seperti pernapasan dalam dan mindfulness. Selain itu, akan dibahas juga cara membuat jadwal belajar yang efektif untuk menghindari sistem kebut semalam.</p><p>Bimbingan bertujuan agar siswa dapat menghadapi ujian dengan kondisi mental yang prima dan <strong>hasil yang maksimal</strong>.</p>">Baca Selengkapnya <span class="group-hover:ml-1 transition-all">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <!-- News Card 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.4s;">
+                        <img src="/img/news3.png" alt="Info Beasiswa" class="w-full h-52 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">Info Beasiswa Terbaru untuk Lulusan SMA</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-3">Kumpulan informasi beasiswa S1 dari berbagai institusi bergengsi dalam dan luar negeri.</p>
+                            <a href="#" class="read-more-btn text-brand-green font-semibold hover:underline group" data-title="Info Beasiswa Terbaru untuk Lulusan SMA" data-img="img/news3.png" data-content="<p>Melanjutkan pendidikan ke jenjang yang lebih tinggi sering terkendala biaya. Oleh karena itu, tim BK telah merangkum berbagai informasi beasiswa yang dapat diakses oleh lulusan SMA Negeri 1 Turen. Informasi mencakup beasiswa dari pemerintah, perusahaan swasta, hingga universitas di luar negeri.</p><p>Detail persyaratan dan tanggal penting dapat dilihat melalui papan pengumuman di ruang BK.</p>">Baca Selengkapnya <span class="group-hover:ml-1 transition-all">&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Self Help Section -->
+        <section id="self-help" class="py-24 bg-green-50">
+            <div class="container mx-auto px-6">
+                <div class="section-title animate-on-scroll" data-animation="animate__fadeIn">
+                    <h2 class="text-green-800">Tolong Diri: Lawan Perundungan</h2>
+                    <p>Kamu berharga dan tidak sendirian. Cari tahu informasi dan dapatkan bantuan di sini.</p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg mb-12 animate-on-scroll" data-animation="animate__fadeInUp">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Apa itu Perundungan (Bullying)?</h3>
+                    <p class="text-gray-600 text-center leading-relaxed">Perundungan adalah segala bentuk penindasan atau kekerasan yang dilakukan dengan sengaja oleh satu orang atau sekelompok orang yang lebih kuat atau berkuasa terhadap orang lain, dengan tujuan untuk menyakiti dan dilakukan secara terus menerus.</p>
+                </div>
+
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center animate-on-scroll" data-animation="animate__fadeIn">Kenali Jenis-jenisnya</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Cards for Bullying Types -->
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.1s;">
+                        <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-fist-raised text-3xl text-red-500"></i></div>
+                        <h4 class="text-xl font-bold mb-2">Fisik</h4>
+                        <p class="text-gray-600 text-sm">Memukul, menendang, mendorong, atau merusak barang.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.2s;">
+                        <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-comment-dots text-3xl text-yellow-500"></i></div>
+                        <h4 class="text-xl font-bold mb-2">Verbal</h4>
+                        <p class="text-gray-600 text-sm">Mengejek, menghina, memberi julukan, atau mengancam.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.3s;">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-users-slash text-3xl text-blue-500"></i></div>
+                        <h4 class="text-xl font-bold mb-2">Sosial</h4>
+                        <p class="text-gray-600 text-sm">Menyebar gosip, mengucilkan, atau mempermalukan.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.4s;">
+                        <div class="bg-gray-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-mobile-alt text-3xl text-gray-700"></i></div>
+                        <h4 class="text-xl font-bold mb-2">Cyberbullying</h4>
+                        <p class="text-gray-600 text-sm">Intimidasi atau pelecehan melalui media sosial atau online.</p>
+                    </div>
+                </div>
+
+                <div class="mt-20 text-center bg-white p-8 md:p-12 rounded-xl shadow-lg animate-on-scroll" data-animation="animate__fadeIn">
+                     <h3 class="text-2xl font-bold mb-4 text-gray-900">Jangan Diam. Ambil Langkah Pertama.</h3>
+                     <p class="text-gray-600 max-w-3xl mx-auto mb-8">Jika kamu mengalami atau melihat perundungan, ada langkah nyata yang bisa kamu ambil. Gunakan alat bantu di bawah ini atau hubungi kami secara rahasia untuk mendapatkan bantuan.</p>
+                     <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8">
+                        <a href="#" target="_blank" class="bg-brand-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg w-full sm:w-auto shadow-md hover:shadow-lg"><i class="fas fa-file-alt mr-2"></i>Isi Skala Perundungan</a>
+                        <a href="#" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg w-full sm:w-auto shadow-md hover:shadow-lg"><i class="fas fa-bullhorn mr-2"></i>Lapor Pengalaman Anda</a>
+                     </div>
+                     <p class="text-gray-600 max-w-3xl mx-auto mb-8">Yang terpenting adalah mencari bantuan. Tim kami siap mendengarkan tanpa menghakimi.</p>
+                     <a href="#contact" class="bg-green-800 hover:bg-green-900 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg"><i class="fas fa-phone-alt mr-2"></i>Hubungi Konselor Kami</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Announcements Section -->
+        <section id="announcements" class="py-24 bg-yellow-50">
+            <div class="container mx-auto px-6">
+                <div class="section-title animate-on-scroll" data-animation="animate__fadeIn">
+                    <h2 class="text-yellow-900">Pengumuman Penting</h2>
+                    <p>Informasi terbaru yang perlu diketahui oleh seluruh siswa dan orang tua.</p>
+                </div>
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <!-- Announcement 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-brand-green flex items-start gap-5 animate-on-scroll" data-animation="animate__fadeInLeft">
+                        <div class="bg-green-100 text-brand-green rounded-full h-12 w-12 flex-shrink-0 flex items-center justify-center"><i class="fas fa-calendar-alt text-xl"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Jadwal Konseling Individu Semester Ganjil</h3>
+                            <p class="text-gray-600">Siswa kelas XII diwajibkan untuk melakukan minimal satu sesi konseling individu terkait rencana studi lanjut. Silakan hubungi guru BK masing-masing untuk penjadwalan.</p>
+                            <small class="text-gray-500 mt-3 block">Diposting: 01 September 2025</small>
+                        </div>
+                    </div>
+                    <!-- Announcement 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-brand-yellow flex items-start gap-5 animate-on-scroll" data-animation="animate__fadeInRight">
+                        <div class="bg-yellow-100 text-yellow-600 rounded-full h-12 w-12 flex-shrink-0 flex items-center justify-center"><i class="fas fa-edit text-xl"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Pendataan Minat dan Bakat Kelas X</h3>
+                            <p class="text-gray-600">Pengisian formulir online pendataan minat dan bakat untuk siswa kelas X akan dibuka hingga tanggal 15 September 2025. Link akan dibagikan melalui wali kelas.</p>
+                            <small class="text-gray-500 mt-3 block">Diposting: 28 Agustus 2025</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="section-title animate-on-scroll" data-animation="animate__fadeIn">
+                    <h2>Galeri Kegiatan</h2>
+                    <p>Momen-momen berharga dari berbagai kegiatan yang telah kami selenggarakan.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-xl shadow-lg gallery-img animate-on-scroll" data-animation="animate__zoomIn" src="https://placehold.co/500x700/16a34a/ffffff?text=Kegiatan+1" alt="Galeri Kegiatan 1"></div>
+                        <div><img class="h-auto max-w-full rounded-xl shadow-lg gallery-img animate-on-scroll" data-animation="animate__zoomIn" src="https://placehold.co/500x500/facc15/ffffff?text=Kegiatan+2" alt="Galeri Kegiatan 2"></div>
+                    </div>
+                     <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-xl shadow-lg gallery-img animate-on-scroll" data-animation="animate__zoomIn" src="https://placehold.co/500x500/1f2937/ffffff?text=Kegiatan+3" alt="Galeri Kegiatan 3"></div>
+                        <div><img class="h-auto max-w-full rounded-xl shadow-lg gallery-img animate-on-scroll" data-animation="animate__zoomIn" src="https://placehold.co/500x700/65a30d/ffffff?text=Kegiatan+4" alt="Galeri Kegiatan 4"></div>
+                    </div>
+                     <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-xl shadow-lg gallery-img animate-on-scroll" data-animation="animate__zoomIn" src="https://placehold.co/500x700/facc15/ffffff?text=Kegiatan+5" alt="Galeri Kegiatan 5"></div>
+                        <div><img class="h-auto max-w-full rounded-xl shadow-lg gallery-img animate-on-scroll" data-animation="animate__zoomIn" src="https://placehold.co/500x500/16a34a/ffffff?text=Kegiatan+6" alt="Galeri Kegiatan 6"></div>
+                    </div>
+                     <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-xl shadow-lg gallery-img animate-on-scroll" data-animation="animate__zoomIn" src="https://placehold.co/500x500/1f2937/ffffff?text=Kegiatan+7" alt="Galeri Kegiatan 7"></div>
+                        <div><img class="h-auto max-w-full rounded-xl shadow-lg gallery-img animate-on-scroll" data-animation="animate__zoomIn" src="https://placehold.co/500x700/65a30d/ffffff?text=Kegiatan+8" alt="Galeri Kegiatan 8"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="section-title animate-on-scroll" data-animation="animate__fadeIn">
+                    <h2>Hubungi Tim Konselor Kami</h2>
+                    <p>Tim kami siap membantu Anda. Jangan ragu untuk menghubungi konselor yang Anda tuju.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Contact Person 1 -->
+                    <div class="bg-white rounded-xl shadow-lg flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-full animate-on-scroll" data-animation="animate__fadeInUp">
+                        <img src="/konselor/diana.JPG" alt="Foto Dra. Diana Ida Prabawaningtyas" class="w-32 h-32 rounded-full mx-auto mt-8 mb-4 border-4 border-yellow-200 object-cover">
+                        <div class="p-6 pt-0 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-1 text-gray-900">Dra. Diana Ida Prabawaningtyas</h3>
+                            <p class="text-gray-500 mb-4">Koordinator BK</p>
+                            <div class="mt-auto flex justify-center space-x-5">
+                                <a href="mailto:sma1turen+dianaidaprabawaningtyas@gmail.com" class="text-2xl text-gray-400 hover:text-brand-dark transition-colors" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="https:/wa.me/6282134036022" class="text-2xl text-gray-400 hover:text-green-500 transition-colors" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/dianaidaprabawaningtyas" class="text-2xl text-gray-400 hover:text-pink-600 transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Person 2 -->
+                    <div class="bg-white rounded-xl shadow-lg flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-full animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.1s;">
+                        <img src="/konselor/pujiono.JPG" alt="Foto Pujiono, S.Pd." class="w-32 h-32 rounded-full mx-auto mt-8 mb-4 border-4 border-green-200 object-cover">
+                         <div class="p-6 pt-0 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-1 text-gray-900">Pujiono, S.Pd.</h3>
+                            <p class="text-gray-500 mb-4">Guru BK</p>
+                            <div class="mt-auto flex justify-center space-x-5">
+                                <a href="mailto:sma1turen+pujiono@gmail.com" class="text-2xl text-gray-400 hover:text-brand-dark transition-colors" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="https://wa.me/6281334341945" class="text-2xl text-gray-400 hover:text-green-500 transition-colors" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/pujiono3965" class="text-2xl text-gray-400 hover:text-pink-600 transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Person 3 -->
+                    <div class="bg-white rounded-xl shadow-lg flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-full animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.2s;">
+                        <img src="/konselor/ade.JPG" alt="Foto Ade Nur Maulidia Fachrisya, S.Pd." class="w-32 h-32 rounded-full mx-auto mt-8 mb-4 border-4 border-gray-200 object-cover">
+                         <div class="p-6 pt-0 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-1 text-gray-900">Ade Nur Maulidia Fachrisya, S.Pd.</h3>
+                            <p class="text-gray-500 mb-4">Guru BK</p>
+                             <div class="mt-auto flex justify-center space-x-5">
+                                <a href="mailto:sma1turen+adenurmaulidiafachrisya@gmail.com" class="text-2xl text-gray-400 hover:text-brand-dark transition-colors" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="https://wa.me/6281233587736" class="text-2xl text-gray-400 hover:text-green-500 transition-colors" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/maulidia_fachrisya" class="text-2xl text-gray-400 hover:text-pink-600 transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Person 4 -->
+                    <div class="bg-white rounded-xl shadow-lg flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-full animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.3s;">
+                        <img src="/konselor/trisabela.JPG" alt="Foto Trisabella Febriana Maharani, S.Pd." class="w-32 h-32 rounded-full mx-auto mt-8 mb-4 border-4 border-pink-200 object-cover">
+                         <div class="p-6 pt-0 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-1 text-gray-900">Trisabella Febriana Maharani, S.Pd.</h3>
+                            <p class="text-gray-500 mb-4">Guru BK</p>
+                             <div class="mt-auto flex justify-center space-x-5">
+                                <a href="mailto:sma1turen+trisabellafebrianamaharani@gmail.com" class="text-2xl text-gray-400 hover:text-brand-dark transition-colors" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="https://wa.me/6282233041760" class="text-2xl text-gray-400 hover:text-green-500 transition-colors" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/trisabellaf" class="text-2xl text-gray-400 hover:text-pink-600 transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-20 text-center text-gray-700 animate-on-scroll" data-animation="animate__fadeIn">
+                     <h3 class="text-2xl font-bold mb-4">Lokasi Kami</h3>
+                     <p class="mb-1">Ruang Bimbingan Konseling, SMA Negeri 1 Turen</p>
+                     <p class="text-gray-600">Jalan Mayjen Panjaitan No.65 Sedayu, Kec. Turen, Kabupaten Malang, Jawa Timur 65175</p>
+                     <div class="w-full h-96 rounded-xl mt-6 overflow-hidden shadow-xl border border-gray-200">
+                         <iframe 
+                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.133285741088!2d112.6772490748955!3d-8.18381559184209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd61f6a92c95a7f%3A0x8aa312fd2091cf18!2sSMA%20Negeri%201%20Turen!5e0!3m2!1sen!2sid!4v1693699812345!5m2!1sen!2sid" 
+                             class="w-full h-full" 
+                             style="border:0;" 
+                             allowfullscreen="" 
+                             loading="lazy" 
+                             referrerpolicy="no-referrer-when-downgrade">
+                         </iframe>
+                     </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">BK SMA Negeri 1 Turen</h3>
+                    <p class="text-gray-400">Jalan Mayjen Panjaitan No.65 Sedayu, Kec. Turen, Kab. Malang, Jawa Timur 65175</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#news" class="text-gray-400 hover:text-brand-yellow transition">Berita</a></li>
+                        <li><a href="#self-help" class="text-gray-400 hover:text-brand-yellow transition">Tolong Diri</a></li>
+                        <li><a href="#announcements" class="text-gray-400 hover:text-brand-yellow transition">Pengumuman</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-brand-yellow transition">Galeri</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Ikuti Kami</h3>
+                     <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-brand-yellow transition-colors"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-brand-yellow transition-colors"><i class="fab fa-youtube text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-brand-yellow transition-colors"><i class="fas fa-globe text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 Bimbingan Konseling SMA Negeri 1 Turen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- News Modal -->
+    <div id="news-modal" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden flex items-center justify-center p-4 animate__animated animate__fadeIn">
+        <div id="news-modal-content" class="bg-white rounded-lg shadow-xl w-full max-w-2xl max-h-full overflow-y-auto animate__animated animate__zoomIn">
+            <div class="p-6 md:p-8 relative">
+                <button id="modal-close-btn" class="absolute top-3 right-3 text-gray-500 hover:text-brand-dark bg-gray-100 hover:bg-gray-200 rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-yellow" aria-label="Close modal">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+                <h2 id="modal-title" class="text-3xl font-bold text-gray-900 mb-4 mr-12"></h2>
+                <img id="modal-img" src="" alt="" class="w-full h-64 object-cover rounded-md my-4">
+                <div id="modal-content-text" class="text-gray-700 space-y-4 prose max-w-none leading-relaxed">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
